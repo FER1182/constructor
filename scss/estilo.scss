@@ -17,7 +17,7 @@ body {
   header {
     background-color: $fondoHeader;
     position: fixed;
-    
+
     width: 100%;
     height: 15%;
     z-index: 3;
@@ -90,12 +90,12 @@ body {
     text-align: center;
     color: black;
     font-size: $letraParrafo;
-  }  
+  }
   .historia {
     text-align: center;
     font-size: $letraParrafo;
   }
-  .cajaSaliente{
+  .cajaSaliente {
     text-align: center;
   }
   .tituloBlog {
@@ -106,7 +106,7 @@ body {
       font-family: $fontTituloPagina;
     }
   }
- 
+
   .containerBlog {
     width: 100%;
     display: grid;
@@ -247,5 +247,42 @@ body {
         }
       }
     }
+  }
+  .shop-container {
+    height: $altoShopContainer;
+    width: $anchoShopContainer;
+    padding-top: 150px;
+    padding-left: 10px;
+    text-align: center;
+   
+    h2{
+      font-family: $fondoFooter;
+      font-size: $letraTitulo;
+    }
+    .row {
+      .col {
+        
+        .row {
+          text-align: center;
+          .imgProducto {
+            
+            width: $anchoImgProducto;
+            height: $altoImgProducto;
+          }
+          .descripcionProducto {
+            font-size: $letraDescripcion;
+            font-family: $fontDescripciones;
+            text-align:center;
+          }
+          .precioProducto{
+            font-size: $letraPrecios;
+            font-family: $fondoContenedoresBlog;
+          }
+        }
+      }
+    }
+  }
+  .puntosVenta-container{
+    
   }
 }

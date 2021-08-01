@@ -366,3 +366,36 @@ body footer .redes .redesLi a:hover .btn--face {
 body footer .redes .redesLi a:hover .btn--mail {
   border: 7px solid #C25E30;
 }
+
+body .shop-container {
+  height: 1300px;
+  width: 1500px;
+  padding-top: 150px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+body .shop-container h2 {
+  font-family: #E5D549;
+  font-size: 50px;
+}
+
+body .shop-container .row .col .row {
+  text-align: center;
+}
+
+body .shop-container .row .col .row .imgProducto {
+  width: 100%;
+  height: 300px;
+}
+
+body .shop-container .row .col .row .descripcionProducto {
+  font-size: 20px;
+  font-family: "Otomanopee One", sans-serif;
+  text-align: center;
+}
+
+body .shop-container .row .col .row .precioProducto {
+  font-size: 20px;
+  font-family: #1768AC;
+}
