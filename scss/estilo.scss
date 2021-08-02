@@ -254,27 +254,25 @@ body {
     padding-top: 150px;
     padding-left: 10px;
     text-align: center;
-   
-    h2{
+
+    h2 {
       font-family: $fondoFooter;
       font-size: $letraTitulo;
     }
     .row {
       .col {
-        
         .row {
           text-align: center;
           .imgProducto {
-            
             width: $anchoImgProducto;
             height: $altoImgProducto;
           }
           .descripcionProducto {
             font-size: $letraDescripcion;
             font-family: $fontDescripciones;
-            text-align:center;
+            text-align: center;
           }
-          .precioProducto{
+          .precioProducto {
             font-size: $letraPrecios;
             font-family: $fondoContenedoresBlog;
           }
@@ -282,7 +280,12 @@ body {
       }
     }
   }
-  .puntosVenta-container{
-    
+  .puntosVenta-container {
+    text-align: center;
+    padding-top: 120px;
+    @include medidaCaja($anchoContainerPuntosVenta, $altoContainerPuntosVenta);
+    .titulo-sucursal{
+      
+    }
   }
 }
