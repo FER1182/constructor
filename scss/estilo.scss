@@ -1,6 +1,9 @@
 @import "colores";
 @import "tamanio";
 @import "tipografia";
+@import "header";
+@import "blog";
+@import "footer";
 
 * {
   padding: 0;
@@ -14,77 +17,7 @@ body {
   height: 100%;
   background-color: $fondoBody;
 
-  header {
-    background-color: $fondoHeader;
-    position: fixed;
-
-    width: 100%;
-    height: 15%;
-    z-index: 3;
-    h1 {
-      color: $colorH1;
-      text-align: center;
-      font-family: "Pacifico", cursive;
-      animation-duration: 10s;
-      animation-name: ver;
-      @keyframes ver {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
-    }
-    .menuIndex {
-      height: 50 px;
-      background-color: $fondoHeader;
-      ul {
-        list-style: none;
-        font-size: 0;
-        text-transform: uppercase;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        ul {
-          position: absolute;
-          display: none;
-        }
-        ul {
-          li {
-            display: block;
-          }
-        }
-        li {
-          &:hover {
-            ul {
-              display: block;
-              background-color: black;
-            }
-          }
-        }
-        li {
-          display: inline-block;
-          text-align: center;
-          font-weight: bold;
-          padding: 0px 80px 0px 80px;
-          font-size: 18px;
-          position: relative;
-          a {
-            text-decoration: none;
-            color: aqua;
-            &:hover {
-              background: white;
-              color: darkgreen;
-              padding: 5px;
-            }
-          }
-        }
-      }
-    }
-  }
+  
   .introduccion {
     padding-top: 120px;
     text-align: center;
@@ -98,61 +31,7 @@ body {
   .cajaSaliente {
     text-align: center;
   }
-  .tituloBlog {
-    padding-top: 100px;
-    text-align: center;
-    .tituloBlogH1 {
-      color: $colorTituloPaginas;
-      font-family: $fontTituloPagina;
-    }
-  }
-
-  .containerBlog {
-    width: 100%;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(5, 1fr);
-    .contentBlog {
-      text-align: center;
-      margin-top: 5px;
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      grid-column: span 3;
-    }
-    .sidebarBlog {
-      margin-top: 5px;
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      width: 90%;
-      grid-column: span 2;
-      .fotoBlog {
-        text-align: center;
-        .imgBlog {
-          width: $anchofotoAsideBlog;
-          height: $altofotoAsideBlog;
-        }
-      }
-    }
-    .publicacionesRelacionadas {
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      font-size: 15px;
-
-      a {
-        color: $colorH1;
-        text-decoration: none;
-        h2 {
-          font-size: 30px;
-          &:hover {
-            background: $fondoHover;
-          }
-        }
-      }
-    }
-  }
+ 
   .carousel {
     background: $fondoCarousel;
     padding-top: 2px;
@@ -187,67 +66,7 @@ body {
       }
     }
   }
-  .ulFooter {
-    list-style: none;
-    font-size: 0;
-    text-transform: uppercase;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    li {
-      display: inline-block;
-      text-align: center;
-      font-weight: bold;
-      padding: 0px 80px 0px 80px;
-      font-size: 18px;
-      position: relative;
-      a {
-        text-decoration: none;
-        color: aqua;
-      }
-    }
-  }
-  footer {
-    background-color: $fondoFooter;
-    .logo {
-      transform: skewy(15deg);
-    }
-    .h5Footer {
-      font-size: 45px;
-      text-align: center;
-    }
-
-    .redes {
-      list-style: none;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      .redesLi {
-        padding: 10px;
-
-        a {
-          .fotoFooter {
-            width: $anchoLogoFooter;
-            height: $altoLogoFooter;
-            &:hover {
-              width: $anchoLogoFooter * 2;
-              height: $altoLogoFooter * 2;
-            }
-          }
-          &:hover {
-            @each $red, $color in $redes {
-              .btn--#{$red} {
-                border: 7px solid $color;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
+  
   .shop-container {
     height: $altoShopContainer;
     width: $anchoShopContainer;

@@ -1,19 +1,4 @@
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-box-sizing: 0;
-          box-sizing: 0;
-}
-
-body {
-  min-height: 100%;
-  font-family: "Mate SC", serif;
-  width: 100%;
-  height: 100%;
-  background-color: cornsilk;
-}
-
-body header {
+header {
   background-color: #03256c;
   position: fixed;
   width: 100%;
@@ -21,7 +6,7 @@ body header {
   z-index: 3;
 }
 
-body header h1 {
+header h1 {
   color: brown;
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -49,12 +34,12 @@ body header h1 {
   }
 }
 
-body header .menuIndex {
+header .menuIndex {
   height: 50 px;
   background-color: #03256c;
 }
 
-body header .menuIndex ul {
+header .menuIndex ul {
   list-style: none;
   font-size: 0;
   text-transform: uppercase;
@@ -72,21 +57,21 @@ body header .menuIndex ul {
       justify-content: space-around;
 }
 
-body header .menuIndex ul ul {
+header .menuIndex ul ul {
   position: absolute;
   display: none;
 }
 
-body header .menuIndex ul ul li {
+header .menuIndex ul ul li {
   display: block;
 }
 
-body header .menuIndex ul li:hover ul {
+header .menuIndex ul li:hover ul {
   display: block;
   background-color: black;
 }
 
-body header .menuIndex ul li {
+header .menuIndex ul li {
   display: inline-block;
   text-align: center;
   font-weight: bold;
@@ -95,15 +80,187 @@ body header .menuIndex ul li {
   position: relative;
 }
 
-body header .menuIndex ul li a {
+header .menuIndex ul li a {
   text-decoration: none;
   color: aqua;
 }
 
-body header .menuIndex ul li a:hover {
+header .menuIndex ul li a:hover {
   background: white;
   color: darkgreen;
   padding: 5px;
+}
+
+.tituloBlog {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.tituloBlog .tituloBlogH1 {
+  color: #CF0000;
+  font-family: "Otomanopee One", sans-serif;
+}
+
+.containerBlog {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+.containerBlog .contentBlog {
+  text-align: center;
+  margin-top: 5px;
+  background-color: #1768AC;
+  padding: 20px;
+  border: 1px solid black;
+  grid-column: span 3;
+}
+
+.containerBlog .sidebarBlog {
+  margin-top: 5px;
+  background-color: #1768AC;
+  padding: 20px;
+  border: 1px solid black;
+  width: 90%;
+  grid-column: span 2;
+}
+
+.containerBlog .sidebarBlog .fotoBlog {
+  text-align: center;
+}
+
+.containerBlog .sidebarBlog .fotoBlog .imgBlog {
+  width: 300px;
+  height: 200px;
+}
+
+.containerBlog .publicacionesRelacionadas {
+  background-color: #1768AC;
+  padding: 20px;
+  border: 1px solid black;
+  font-size: 15px;
+}
+
+.containerBlog .publicacionesRelacionadas a {
+  color: brown;
+  text-decoration: none;
+}
+
+.containerBlog .publicacionesRelacionadas a h2 {
+  font-size: 30px;
+}
+
+.containerBlog .publicacionesRelacionadas a h2:hover {
+  background: #E1E5EA;
+}
+
+.ulFooter {
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ulFooter li {
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0px 80px 0px 80px;
+  font-size: 18px;
+  position: relative;
+}
+
+.ulFooter li a {
+  text-decoration: none;
+  color: aqua;
+}
+
+footer {
+  background-color: #E5D549;
+}
+
+footer .logo {
+  -webkit-transform: skewy(15deg);
+          transform: skewy(15deg);
+}
+
+footer .h5Footer {
+  font-size: 45px;
+  text-align: center;
+}
+
+footer .redes {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .redes .redesLi {
+  padding: 10px;
+}
+
+footer .redes .redesLi a .fotoFooter {
+  width: 30px;
+  height: 30px;
+}
+
+footer .redes .redesLi a .fotoFooter:hover {
+  width: 60px;
+  height: 60px;
+}
+
+footer .redes .redesLi a:hover .btn--ig {
+  border: 7px solid #8293a0;
+}
+
+footer .redes .redesLi a:hover .btn--twit {
+  border: 7px solid #55acee;
+}
+
+footer .redes .redesLi a:hover .btn--face {
+  border: 7px solid #3a5795;
+}
+
+footer .redes .redesLi a:hover .btn--mail {
+  border: 7px solid #C25E30;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: 0;
+          box-sizing: 0;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Mate SC", serif;
+  width: 100%;
+  height: 100%;
+  background-color: cornsilk;
 }
 
 body .introduccion {
@@ -120,72 +277,6 @@ body .historia {
 
 body .cajaSaliente {
   text-align: center;
-}
-
-body .tituloBlog {
-  padding-top: 100px;
-  text-align: center;
-}
-
-body .tituloBlog .tituloBlogH1 {
-  color: #CF0000;
-  font-family: "Otomanopee One", sans-serif;
-}
-
-body .containerBlog {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  gap: 1em;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-}
-
-body .containerBlog .contentBlog {
-  text-align: center;
-  margin-top: 5px;
-  background-color: #1768AC;
-  padding: 20px;
-  border: 1px solid black;
-  grid-column: span 3;
-}
-
-body .containerBlog .sidebarBlog {
-  margin-top: 5px;
-  background-color: #1768AC;
-  padding: 20px;
-  border: 1px solid black;
-  width: 90%;
-  grid-column: span 2;
-}
-
-body .containerBlog .sidebarBlog .fotoBlog {
-  text-align: center;
-}
-
-body .containerBlog .sidebarBlog .fotoBlog .imgBlog {
-  width: 300px;
-  height: 200px;
-}
-
-body .containerBlog .publicacionesRelacionadas {
-  background-color: #1768AC;
-  padding: 20px;
-  border: 1px solid black;
-  font-size: 15px;
-}
-
-body .containerBlog .publicacionesRelacionadas a {
-  color: brown;
-  text-decoration: none;
-}
-
-body .containerBlog .publicacionesRelacionadas a h2 {
-  font-size: 30px;
-}
-
-body .containerBlog .publicacionesRelacionadas a h2:hover {
-  background: #E1E5EA;
 }
 
 body .carousel {
@@ -274,97 +365,6 @@ body .galeria .foto9 {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   grid-area: foto9;
-}
-
-body .ulFooter {
-  list-style: none;
-  font-size: 0;
-  text-transform: uppercase;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body .ulFooter li {
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0px 80px 0px 80px;
-  font-size: 18px;
-  position: relative;
-}
-
-body .ulFooter li a {
-  text-decoration: none;
-  color: aqua;
-}
-
-body footer {
-  background-color: #E5D549;
-}
-
-body footer .logo {
-  -webkit-transform: skewy(15deg);
-          transform: skewy(15deg);
-}
-
-body footer .h5Footer {
-  font-size: 45px;
-  text-align: center;
-}
-
-body footer .redes {
-  list-style: none;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-body footer .redes .redesLi {
-  padding: 10px;
-}
-
-body footer .redes .redesLi a .fotoFooter {
-  width: 30px;
-  height: 30px;
-}
-
-body footer .redes .redesLi a .fotoFooter:hover {
-  width: 60px;
-  height: 60px;
-}
-
-body footer .redes .redesLi a:hover .btn--ig {
-  border: 7px solid #8293a0;
-}
-
-body footer .redes .redesLi a:hover .btn--twit {
-  border: 7px solid #55acee;
-}
-
-body footer .redes .redesLi a:hover .btn--face {
-  border: 7px solid #3a5795;
-}
-
-body footer .redes .redesLi a:hover .btn--mail {
-  border: 7px solid #C25E30;
 }
 
 body .shop-container {
