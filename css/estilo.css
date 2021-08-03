@@ -248,6 +248,90 @@ footer .redes .redesLi a:hover .btn--mail {
   border: 7px solid #C25E30;
 }
 
+/*celular*/
+@media only screen and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: yellow;
+  }
+  h1 {
+    color: red;
+    font-size: 18px;
+  }
+  .menuIndex {
+    width: 40%;
+    background-color: gainsboro;
+  }
+  header {
+    background-color: cornsilk;
+  }
+  ul {
+    list-style: none;
+    font-size: 0;
+    text-transform: uppercase;
+    height: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fotoIndex {
+    padding: 5px;
+    margin-top: 50px;
+    margin-left: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #000000;
+  }
+  h1 {
+    color: white;
+    font-size: 26px;
+  }
+}
+
+/*computadora*/
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #1768AC;
+  }
+  h1 {
+    color: #E5D549;
+    font-size: 36px;
+  }
+}
+
+.contacto {
+  padding-top: 120px;
+  padding-left: 10px;
+  font-family: "Otomanopee One", sans-serif;
+  font-size: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -260,7 +344,7 @@ body {
   font-family: "Mate SC", serif;
   width: 100%;
   height: 100%;
-  background-color: cornsilk;
+  background-color: #1768AC;
 }
 
 body .introduccion {
