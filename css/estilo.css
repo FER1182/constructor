@@ -332,6 +332,133 @@ footer .redes .redesLi a:hover .btn--mail {
   font-size: 20px;
 }
 
+.introduccion {
+  padding-top: 120px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+}
+
+.historia {
+  text-align: center;
+  font-size: 30px;
+}
+
+.cajaSaliente {
+  text-align: center;
+}
+
+.carousel {
+  background: #1768AC;
+  padding-top: 2px;
+}
+
+.carousel .sizeCarrousel {
+  width: 800px;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel .botonCarousel {
+  background-color: gray;
+}
+
+.galeria {
+  padding-top: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+      grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
+}
+
+.galeria .foto {
+  width: 100%;
+  height: 100%;
+}
+
+.galeria .foto1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: foto1;
+}
+
+.galeria .foto2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: foto2;
+}
+
+.galeria .foto3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: foto3;
+}
+
+.galeria .foto4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: foto4;
+}
+
+.galeria .foto5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: foto5;
+}
+
+.galeria .foto6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: foto6;
+}
+
+.galeria .foto7 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: foto7;
+}
+
+.galeria .foto8 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: foto8;
+}
+
+.galeria .foto9 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: foto9;
+}
+
+.lineaNenas {
+  padding-top: 120px;
+  padding-left: 150px;
+  text-align: center;
+}
+
+.lineaNenas .box-producto {
+  background-color: skyblue;
+  display: block;
+  padding: 18px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.lineaNenas .box-producto .fotoNenas {
+  height: 100%;
+  width: 100%;
+}
+
+.lineaNenas .videoNenas {
+  margin-top: 20px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -345,110 +472,6 @@ body {
   width: 100%;
   height: 100%;
   background-color: #1768AC;
-}
-
-body .introduccion {
-  padding-top: 120px;
-  text-align: center;
-  color: black;
-  font-size: 30px;
-}
-
-body .historia {
-  text-align: center;
-  font-size: 30px;
-}
-
-body .cajaSaliente {
-  text-align: center;
-}
-
-body .carousel {
-  background: #1768AC;
-  padding-top: 2px;
-}
-
-body .carousel .sizeCarrousel {
-  width: 800px;
-  margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-body .carousel .botonCarousel {
-  background-color: gray;
-}
-
-body .galeria {
-  padding-top: 5px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 1px 1px;
-  grid-auto-flow: row;
-      grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6" "foto7 foto8 foto9";
-}
-
-body .galeria .foto {
-  width: 100%;
-  height: 100%;
-}
-
-body .galeria .foto1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: foto1;
-}
-
-body .galeria .foto2 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: foto2;
-}
-
-body .galeria .foto3 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: foto3;
-}
-
-body .galeria .foto4 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: foto4;
-}
-
-body .galeria .foto5 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: foto5;
-}
-
-body .galeria .foto6 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 3;
-  grid-area: foto6;
-}
-
-body .galeria .foto7 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: foto7;
-}
-
-body .galeria .foto8 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 2;
-  grid-area: foto8;
-}
-
-body .galeria .foto9 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: foto9;
 }
 
 body .shop-container {

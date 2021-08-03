@@ -1,0 +1,21 @@
+.lineaNenas {
+  padding-top: 120px;
+  padding-left: 150px;
+  text-align: center;
+   
+  .box-producto {
+    background-color: skyblue;
+    display: block;
+    padding: 18px;
+    margin-bottom: 30px;
+    position: relative;
+
+    .fotoNenas {
+      @include medidaCaja($anchoFotoShopNenas, $altoFotoShopNenas);
+    }
+  }
+  .videoNenas {
+   // margin-left: 25%;
+    margin-top: 20px;
+  }
+}
