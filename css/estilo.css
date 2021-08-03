@@ -510,6 +510,19 @@ body .shop-container .row .col .row .precioProducto {
 body .puntosVenta-container {
   text-align: center;
   padding-top: 120px;
-  height: 1000px;
-  width: 1200px;
+  height: 100%;
+  width: 100%;
+}
+
+body .puntosVenta-container .fila-sucursal {
+  border-style: outset;
+  padding: 18px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+body .puntosVenta-container .fila-sucursal .bloque-sucursal {
+  background-color: aliceblue;
+  border-style: inset;
+  margin: 5px;
 }
