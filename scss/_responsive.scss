@@ -4,6 +4,8 @@
     background-color: #1768ac;
   }
   header {
+    max-width: 100%;
+    width: 100%;
     h1{
       display: block;
     }
@@ -17,6 +19,8 @@
       }
       .nav-menu {
         list-style: none;
+        
+        height: 100px;
         font-size: 0;
         text-transform: uppercase;
         width: 100%;
