@@ -47,50 +47,6 @@ header .menuIndex {
       -ms-flex-align: center;
           align-items: center;
   background-color: #03256c;
-  /*ul {
-        list-style: none;
-        font-size: 0;
-        text-transform: uppercase;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        ul {
-          position: absolute;
-          display: none;
-        }
-        ul {
-          li {
-            display: block;
-          }
-        }
-        li {
-          &:hover {
-            ul {
-              display: block;
-              background-color: black;
-            }
-          }
-        }
-        li {
-          display: inline-block;
-          text-align: center;
-          font-weight: bold;
-          padding: 0px 80px 0px 80px;
-          font-size: 18px;
-          position: relative;
-          a {
-            text-decoration: none;
-            color: aqua;
-            &:hover {
-              background: white;
-              color: darkgreen;
-              padding: 5px;
-            }
-          }
-        }
-      }*/
 }
 
 header .menuIndex .logo {
@@ -109,6 +65,7 @@ header .menuIndex .bar-btn {
 header .menuIndex .nav-menu {
   position: fixed;
   max-width: 100%;
+  width: 100%;
   height: 0px;
   top: 100px;
   background: #1768AC;
@@ -128,7 +85,7 @@ header .menuIndex .nav-menu li {
 header .menuIndex .nav-menu li a {
   color: #fff;
   text-decoration: none;
-  font-size: 35px;
+  font-size: 25px;
   text-transform: uppercase;
   font-weight: 300;
 }

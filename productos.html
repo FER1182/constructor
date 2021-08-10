@@ -12,6 +12,11 @@
       name="keywords"
       content="PRODUCTOS, DIDACTICOS, ENCASTRE, LADRILLITOS, JUGUETES, JUEGOS, INTELIGENCIA, CHICOS,CONSTRUCTO"
     />
+    <!-- frame menu hamburguer -->
+    <script
+      src="https://kit.fontawesome.com/655ca38440.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -30,26 +35,37 @@
   <body>
     <header>
       <h1>
-        <a href="./index.html"
+        <a href="index.html"
           ><img src="fotos/LOGO.jpg" alt="foto" title="HOME" width="50px" /></a
         >EL PEQUEÑO CONSTRUCTOR👷🏼‍♂️
       </h1>
 
       <nav class="menuIndex">
-        <ul>
-          <li><a href="./productos.html">Productos</a></li>
+        <div>
+          <a href="./index.html">
+            <img src="fotos/LOGO.jpg" alt="foto" title="HOME" class="logo"
+          /></a>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="bar-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-menu">
+          <li><a class="active" href="productos.html">Productos</a></li>
 
           <li>
-            <a href="./puntosDeVenta.html">Puntos De Venta</a>
+            <a href="puntosDeVenta.html">Puntos De Venta</a>
             <ul>
-              <li><a href="./puntosDeVentaArgentina.html">Argentina</a></li>
-              <li><a href="./puntosDeVentaChile.html">Chile</a></li>
+              <li><a href="puntosDeVentaArgentina.html">Argentina</a></li>
+              <li><a href="puntosDeVentaChile.html">Chile</a></li>
             </ul>
           </li>
-          <li><a href="./blog.html">blog</a></li>
+          <li><a href="blog.html">blog</a></li>
         </ul>
       </nav>
     </header>
+
+
     <section class="container container-sm shop-container">
       <h2>PRODUCTOS</h2>
       <div class="row">

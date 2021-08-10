@@ -8,6 +8,11 @@
       name="description"
       content="El Pequeño Constructor tiene una amplia variedad de productos para que disfrutes de distintas experiencias en un mundo de nenas"
     />
+    <!-- frame menu hamburguer -->
+    <script
+      src="https://kit.fontawesome.com/655ca38440.js"
+      crossorigin="anonymous"
+    ></script>
     <meta
       name="keywords"
       content="PRODUCTOS, DIDACTICOS, ENCASTRE, LADRILLITOS, JUGUETES, JUEGOS, INTELIGENCIA, CHICOS,NENAS,CONSTRUCTOR"
@@ -25,31 +30,42 @@
       href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Pacifico&display=swap"
       rel="stylesheet"
     />
-    <title>LINEA NENAS</title>
+    <title>CONSTRUCTOR LINEA NENAS</title>
   </head>
   <body>
     <header>
       <h1>
-        <a href="./index.html"
+        <a href="index.html"
           ><img src="fotos/LOGO.jpg" alt="foto" title="HOME" width="50px" /></a
         >EL PEQUEÑO CONSTRUCTOR👷🏼‍♂️
       </h1>
 
       <nav class="menuIndex">
-        <ul>
-          <li><a href="./productos.html">Productos</a></li>
+        <div>
+          <a href="./index.html">
+            <img src="fotos/LOGO.jpg" alt="foto" title="HOME" class="logo"
+          /></a>
+        </div>
+        <input type="checkbox" id="check" />
+        <label for="check" class="bar-btn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-menu">
+          <li><a class="active" href="productos.html">Productos</a></li>
 
           <li>
-            <a href="./puntosDeVenta.html">Puntos De Venta</a>
+            <a href="puntosDeVenta.html">Puntos De Venta</a>
             <ul>
-              <li><a href="./puntosDeVentaArgentina.html">Argentina</a></li>
-              <li><a href="./puntosDeVentaChile.html">Chile</a></li>
+              <li><a href="puntosDeVentaArgentina.html">Argentina</a></li>
+              <li><a href="puntosDeVentaChile.html">Chile</a></li>
             </ul>
           </li>
-          <li><a href="./blog.html">blog</a></li>
+          <li><a href="blog.html">blog</a></li>
         </ul>
       </nav>
     </header>
+
+
 
     <section class="lineaNenas">
       <div class="col-lg-9">
