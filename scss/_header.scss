@@ -2,7 +2,7 @@ header {
   background-color: $fondoHeader;
   position: fixed;
 
-  max-width: 100%;
+  max-width: 81.4%;
   width: 100%;
   z-index: 3;
   h1 {
@@ -55,9 +55,9 @@ header {
         a {
           color: #fff;
           text-decoration: none;
-          font-size: $letraTitulo;
+          font-size: 35px;
           text-transform: uppercase;
-          font-weight: 600;
+          font-weight: 300;
           .active {
             color: $colorH1;
             transition: 0.3s;
@@ -72,8 +72,8 @@ header {
     #check {
       display: none;
       &:checked ~ .nav-menu {
-        height: 300px;
-        margin-top: 60px;
+        height: 500px;
+        margin-top: 20px;
         li {
           display: block;
         }
