@@ -1,29 +1,85 @@
 header {
-    background-color: $fondoHeader;
-    position: fixed;
+  background-color: $fondoHeader;
+  position: fixed;
 
-    width: 100%;
-    height: 15%;
-    z-index: 3;
-    h1 {
-      color: $colorH1;
+  max-width: 100%;
+  width: 65%;
+  z-index: 3;
+  h1 {
+    display: none;
+    color: $colorH1;
+    text-align: center;
+    font-family: "Pacifico", cursive;
+    animation-duration: 10s;
+    animation-name: ver;
+    @keyframes ver {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  .menuIndex {
+   
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $fondoHeader;
+    .logo {
+      width: 50px;
+      margin-left: 20px;
+    }
+    .bar-btn {
+      font-size: 25px;
+      color: #fff;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .nav-menu {
+      position: fixed;
+      max-width: 100%;
+      height: 0px;
+      top: 100px;
+      background: $fondoContenedoresBlog;
       text-align: center;
-      font-family: "Pacifico", cursive;
-      animation-duration: 10s;
-      animation-name: ver;
-      @keyframes ver {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
+      transition: all 0.5s;
+      li {
+        display: none;
+        line-height: 30px;
+        margin: 50px 0;
+        transition: all 0.5s;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: $letraTitulo;
+          text-transform: uppercase;
+          font-weight: 600;
+          .active {
+            color: $colorH1;
+            transition: 0.3s;
+          }
+          &:hover {
+            color: $colorH1;
+            transition: 0.3s;
+          }
         }
       }
     }
-    .menuIndex {
-      height: 50 px;
-      background-color: $fondoHeader;
-      ul {
+    #check {
+      display: none;
+      &:checked ~ .nav-menu {
+        height: 300px;
+        margin-top: 60px;
+        li {
+          display: block;
+        }
+      }
+    }
+
+    /*ul {
         list-style: none;
         font-size: 0;
         text-transform: uppercase;
@@ -66,6 +122,6 @@ header {
             }
           }
         }
-      }
-    }
+      }*/
   }
+}

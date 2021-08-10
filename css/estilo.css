@@ -1,12 +1,13 @@
 header {
   background-color: #03256c;
   position: fixed;
-  width: 100%;
-  height: 15%;
+  max-width: 100%;
+  width: 65%;
   z-index: 3;
 }
 
 header h1 {
+  display: none;
   color: brown;
   text-align: center;
   font-family: "Pacifico", cursive;
@@ -35,60 +36,125 @@ header h1 {
 }
 
 header .menuIndex {
-  height: 50 px;
-  background-color: #03256c;
-}
-
-header .menuIndex ul {
-  list-style: none;
-  font-size: 0;
-  text-transform: uppercase;
-  width: 100%;
+  max-width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #03256c;
+  /*ul {
+        list-style: none;
+        font-size: 0;
+        text-transform: uppercase;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        ul {
+          position: absolute;
+          display: none;
+        }
+        ul {
+          li {
+            display: block;
+          }
+        }
+        li {
+          &:hover {
+            ul {
+              display: block;
+              background-color: black;
+            }
+          }
+        }
+        li {
+          display: inline-block;
+          text-align: center;
+          font-weight: bold;
+          padding: 0px 80px 0px 80px;
+          font-size: 18px;
+          position: relative;
+          a {
+            text-decoration: none;
+            color: aqua;
+            &:hover {
+              background: white;
+              color: darkgreen;
+              padding: 5px;
+            }
+          }
+        }
+      }*/
 }
 
-header .menuIndex ul ul {
-  position: absolute;
+header .menuIndex .logo {
+  width: 50px;
+  margin-left: 20px;
+}
+
+header .menuIndex .bar-btn {
+  font-size: 25px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+header .menuIndex .nav-menu {
+  position: fixed;
+  max-width: 100%;
+  height: 0px;
+  top: 100px;
+  background: #1768AC;
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .menuIndex .nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+header .menuIndex .nav-menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+header .menuIndex .nav-menu li a .active {
+  color: brown;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menuIndex .nav-menu li a:hover {
+  color: brown;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+header .menuIndex #check {
   display: none;
 }
 
-header .menuIndex ul ul li {
+header .menuIndex #check:checked ~ .nav-menu {
+  height: 300px;
+  margin-top: 60px;
+}
+
+header .menuIndex #check:checked ~ .nav-menu li {
   display: block;
-}
-
-header .menuIndex ul li:hover ul {
-  display: block;
-  background-color: black;
-}
-
-header .menuIndex ul li {
-  display: inline-block;
-  text-align: center;
-  font-weight: bold;
-  padding: 0px 80px 0px 80px;
-  font-size: 18px;
-  position: relative;
-}
-
-header .menuIndex ul li a {
-  text-decoration: none;
-  color: aqua;
-}
-
-header .menuIndex ul li a:hover {
-  background: white;
-  color: darkgreen;
-  padding: 5px;
 }
 
 .tituloBlog {
@@ -228,8 +294,8 @@ footer .redes .redesLi a .fotoFooter {
 }
 
 footer .redes .redesLi a .fotoFooter:hover {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
 }
 
 footer .redes .redesLi a:hover .btn--ig {
@@ -246,83 +312,6 @@ footer .redes .redesLi a:hover .btn--face {
 
 footer .redes .redesLi a:hover .btn--mail {
   border: 7px solid #C25E30;
-}
-
-/*celular*/
-@media only screen and (max-width: 768px) {
-  * {
-    margin: 0;
-    padding: 0;
-  }
-  body {
-    background-color: yellow;
-  }
-  h1 {
-    color: red;
-    font-size: 18px;
-  }
-  .menuIndex {
-    width: 40%;
-    background-color: gainsboro;
-  }
-  header {
-    background-color: cornsilk;
-  }
-  ul {
-    list-style: none;
-    font-size: 0;
-    text-transform: uppercase;
-    height: 40%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  .fotoIndex {
-    padding: 5px;
-    margin-top: 50px;
-    margin-left: 5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-/*tablet*/
-@media only screen and (min-width: 768px) {
-  body {
-    background-color: #000000;
-  }
-  h1 {
-    color: white;
-    font-size: 26px;
-  }
-}
-
-/*computadora*/
-@media only screen and (min-width: 1024px) {
-  body {
-    background-color: #1768AC;
-  }
-  h1 {
-    color: #E5D549;
-    font-size: 36px;
-  }
 }
 
 .contacto {
@@ -354,7 +343,7 @@ footer .redes .redesLi a:hover .btn--mail {
 }
 
 .carousel .sizeCarrousel {
-  width: 800px;
+  width: 100%;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
@@ -459,17 +448,93 @@ footer .redes .redesLi a:hover .btn--mail {
   margin-top: 20px;
 }
 
+/*tablet*/
+@media only screen and (min-width: 768px) {
+  body {
+    background-color: #1768ac;
+  }
+  header h1 {
+    display: block;
+  }
+  header .menuIndex {
+    height: 100px;
+  }
+  header .menuIndex .logo {
+    display: none;
+  }
+  header .menuIndex .bar-btn {
+    display: none;
+  }
+  header .menuIndex .nav-menu {
+    list-style: none;
+    font-size: 0;
+    text-transform: uppercase;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  header .menuIndex .nav-menu ul {
+    position: absolute;
+    display: none;
+  }
+  header .menuIndex .nav-menu ul li {
+    display: block;
+  }
+  header .menuIndex .nav-menu li:hover ul {
+    display: block;
+    background-color: black;
+  }
+  header .menuIndex .nav-menu li {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 80px 0px 80px;
+    font-size: 18px;
+    position: relative;
+  }
+  header .menuIndex .nav-menu li a {
+    text-decoration: none;
+    color: aqua;
+  }
+  header .menuIndex .nav-menu li a:hover {
+    background: white;
+    color: darkgreen;
+    padding: 5px;
+  }
+}
+
+/*computadora
+  @media only screen and (min-width: 1024px) {
+    body {
+      background-color:#1768AC;
+    }
+    h1 {
+      color: #E5D549;
+      font-size: 36px;
+    }
+  }
+  */
 * {
   padding: 0;
   margin: 0;
   -webkit-box-sizing: 0;
           box-sizing: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
-  min-height: 100%;
   font-family: "Mate SC", serif;
-  width: 100%;
+  max-width: 100%;
   height: 100%;
   background-color: #1768AC;
 }
@@ -525,4 +590,14 @@ body .puntosVenta-container .fila-sucursal .bloque-sucursal {
   background-color: aliceblue;
   border-style: inset;
   margin: 5px;
+}
+
+body .row {
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+body .row .imagen img {
+  width: 100%;
+  height: 250px;
 }
