@@ -219,6 +219,10 @@ footer {
   background-color: #E5D549;
 }
 
+footer .row {
+  max-width: 100%;
+}
+
 footer .h5Footer {
   font-size: 20px;
   text-align: center;

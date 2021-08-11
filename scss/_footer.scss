@@ -1,61 +1,64 @@
 .ulFooter {
-    list-style: none;
-    font-size: 0;
-    text-transform: uppercase;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 0;
-    padding-top: 0;
-    li {
-      display: inline-block;
-      text-align: center;
-      font-weight: bold;
-      padding: 0px 80px 0px 80px;
-      font-size: 10px;
-      position: relative;
-      a {
-        text-decoration: none;
-        color: #fff;
-      }
+  list-style: none;
+  font-size: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 0;
+  padding-top: 0;
+  li {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 80px 0px 80px;
+    font-size: 10px;
+    position: relative;
+    a {
+      text-decoration: none;
+      color: #fff;
     }
   }
-  footer {
-    background-color: $fondoFooter;
-  
-    .h5Footer {
-      font-size: 20px;
-      text-align: center;
-    }
+}
+footer {
 
-    .redes {
-      list-style: none;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      .redesLi {
-        padding: 10px;
+  background-color: $fondoFooter;
+  .row{
+    max-width: 100%;
+  }
+  .h5Footer {
+    font-size: 20px;
+    text-align: center;
+  }
 
-        a {
-          .fotoFooter {
-            width: $anchoLogoFooter;
-            height: $altoLogoFooter;
-            &:hover {
-              width: $anchoLogoFooter * 1.5;
-              height: $altoLogoFooter * 1.5;
-            }
-          }
+  .redes {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    .redesLi {
+      padding: 10px;
+
+      a {
+        .fotoFooter {
+          width: $anchoLogoFooter;
+          height: $altoLogoFooter;
           &:hover {
-            @each $red, $color in $redes {
-              .btn--#{$red} {
-                border: 7px solid $color;
-              }
+            width: $anchoLogoFooter * 1.5;
+            height: $altoLogoFooter * 1.5;
+          }
+        }
+        &:hover {
+          @each $red, $color in $redes {
+            .btn--#{$red} {
+              border: 7px solid $color;
             }
           }
         }
       }
     }
   }
+}
