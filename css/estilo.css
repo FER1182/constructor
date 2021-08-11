@@ -1,7 +1,7 @@
 header {
   background-color: #03256c;
   position: fixed;
-  max-width: 81.4%;
+  max-width: 100%;
   width: 100%;
   z-index: 3;
 }
@@ -197,6 +197,8 @@ header .menuIndex #check:checked ~ .nav-menu li {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 .ulFooter li {
@@ -204,26 +206,21 @@ header .menuIndex #check:checked ~ .nav-menu li {
   text-align: center;
   font-weight: bold;
   padding: 0px 80px 0px 80px;
-  font-size: 18px;
+  font-size: 10px;
   position: relative;
 }
 
 .ulFooter li a {
   text-decoration: none;
-  color: aqua;
+  color: #fff;
 }
 
 footer {
   background-color: #E5D549;
 }
 
-footer .logo {
-  -webkit-transform: skewy(15deg);
-          transform: skewy(15deg);
-}
-
 footer .h5Footer {
-  font-size: 45px;
+  font-size: 20px;
   text-align: center;
 }
 
@@ -303,8 +300,6 @@ footer .redes .redesLi a:hover .btn--mail {
 .carousel .sizeCarrousel {
   width: 100%;
   margin-top: 120px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .carousel .botonCarousel {
@@ -454,13 +449,13 @@ footer .redes .redesLi a:hover .btn--mail {
   }
   header .menuIndex .nav-menu li:hover ul {
     display: block;
-    background-color: black;
+    background-color: #1768AC;
   }
   header .menuIndex .nav-menu li {
     display: inline-block;
     text-align: center;
     font-weight: bold;
-    padding: 0px 80px 0px 80px;
+    padding: 0px 30px 0px 30px;
     font-size: 18px;
     position: relative;
   }
@@ -475,17 +470,6 @@ footer .redes .redesLi a:hover .btn--mail {
   }
 }
 
-/*computadora
-  @media only screen and (min-width: 1024px) {
-    body {
-      background-color:#1768AC;
-    }
-    h1 {
-      color: #E5D549;
-      font-size: 36px;
-    }
-  }
-  */
 * {
   padding: 0;
   margin: 0;
@@ -513,6 +497,16 @@ body .shop-container {
 body .shop-container h2 {
   font-family: #E5D549;
   font-size: 50px;
+}
+
+body .shop-container .row {
+  margin-top: 30px;
+  padding-top: 50px;
+}
+
+body .shop-container .row .imagen img {
+  width: 100%;
+  height: 250px;
 }
 
 body .shop-container .row .col .row {
@@ -553,14 +547,4 @@ body .puntosVenta-container .fila-sucursal .bloque-sucursal {
   background-color: aliceblue;
   border-style: inset;
   margin: 5px;
-}
-
-body .row {
-  margin-top: 30px;
-  padding-top: 50px;
-}
-
-body .row .imagen img {
-  width: 100%;
-  height: 250px;
 }

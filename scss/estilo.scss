@@ -1,4 +1,3 @@
-
 @import "colores";
 @import "tamanio";
 @import "tipografia";
@@ -18,7 +17,6 @@
   list-style: none;
 }
 body {
-  
   font-family: "Mate SC", serif;
   max-width: 100%;
   height: 100%;
@@ -36,6 +34,16 @@ body {
       font-size: $letraTitulo;
     }
     .row {
+      margin-top: 30px;
+      padding-top: 50px;
+
+      .imagen {
+        img {
+          width: 100%;
+          height: 250px;
+        }
+      }
+
       .col {
         .row {
           text-align: center;
@@ -72,16 +80,5 @@ body {
       }
     }
     @include medidaCaja($anchoContainerPuntosVenta, $altoContainerPuntosVenta);
-  }
-  .row {
-    margin-top: 30px;
-    padding-top: 50px;
-
-    .imagen {
-      img {
-        width: 100%;
-        height: 250px;
-      }
-    }
   }
 }
