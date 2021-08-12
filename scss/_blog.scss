@@ -1,55 +1,62 @@
 .tituloBlog {
-    padding-top: 100px;
+  padding-top: 200px;
+  text-align: center;
+  max-width: 100%;
+  .tituloBlogH1 {
+    color: $colorTituloPaginas;
+    font-family: $fontTituloPagina;
+  }
+}
+
+.containerBlog {
+  width: 100%;
+  max-width: 100%;
+  display: grid;
+  gap: 1em;
+  grid-template-columns: repeat(1  1fr);
+  .contentBlog {
+    max-width: 100%;
     text-align: center;
-    .tituloBlogH1 {
-      color: $colorTituloPaginas;
-      font-family: $fontTituloPagina;
-    }
+    margin-top: 5px;
+   
+    background-color: $fondoContenedoresBlog;
+    padding: 5px;
+    border: 1px solid black;
+    grid-column: span 1;
   }
-
-  .containerBlog {
-    width: 100%;
-    display: grid;
-    gap: 1em;
-    grid-template-columns: repeat(5, 1fr);
-    .contentBlog {
+  .sidebarBlog {
+    margin-top: 5px;
+    margin-left: 5px;
+    max-width: 100%;
+    background-color: $fondoContenedoresBlog;
+    padding: 20px;
+    border: 1px solid black;
+    width: 95%;
+    grid-column: span 1;
+    .fotoBlog {
       text-align: center;
-      margin-top: 5px;
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      grid-column: span 3;
-    }
-    .sidebarBlog {
-      margin-top: 5px;
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      width: 90%;
-      grid-column: span 2;
-      .fotoBlog {
-        text-align: center;
-        .imgBlog {
-          width: $anchofotoAsideBlog;
-          height: $altofotoAsideBlog;
-        }
+      .imgBlog {
+        width: 100px;
+        height: 100px;
       }
     }
-    .publicacionesRelacionadas {
-      background-color: $fondoContenedoresBlog;
-      padding: 20px;
-      border: 1px solid black;
-      font-size: 15px;
+  }
+  .publicacionesRelacionadas {
+    max-width: 100%;
+    background-color: $fondoContenedoresBlog;
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 10px;
 
-      a {
-        color: $colorH1;
-        text-decoration: none;
-        h2 {
-          font-size: 30px;
-          &:hover {
-            background: $fondoHover;
-          }
+    a {
+      color: $colorH1;
+      text-decoration: none;
+      h2 {
+        font-size: 30px;
+        &:hover {
+          background: $fondoHover;
         }
       }
     }
   }
+}
