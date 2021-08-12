@@ -162,8 +162,8 @@ header .menuIndex #check:checked ~ .nav-menu li {
 }
 
 .containerBlog .sidebarBlog .fotoBlog .imgBlog {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
 }
 
 .containerBlog .publicacionesRelacionadas {
