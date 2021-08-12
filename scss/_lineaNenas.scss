@@ -1,12 +1,20 @@
-.lineaNenas {
-  padding-top: 120px;
-  padding-left: 150px;
+.tituloNenas {
+  padding-top: 100px;
   text-align: center;
-   
+  font-size: $letraTitulo;
+}
+.lineaNenas {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+
+  .row {
+    max-width: 100%;
+  }
   .box-producto {
     background-color: skyblue;
     display: block;
-    padding: 18px;
+    padding: 18px 3px 18px 3px;
     margin-bottom: 30px;
     position: relative;
 
@@ -15,7 +23,8 @@
     }
   }
   .videoNenas {
-   // margin-left: 25%;
     margin-top: 20px;
+    width: 400ppx;
+    height: 315px;
   }
 }

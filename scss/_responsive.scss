@@ -138,4 +138,17 @@
       }
     }
   }
+  //linea nenas
+  .tituloNenas {
+    padding-top: 220px;
+    text-align: center;
+    font-size: $letraTitulo;
+  }
+  .box-prodcuto{
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .box-photo {
+    @include medidaCaja(100%,150px);
+  }
 }

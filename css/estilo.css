@@ -429,16 +429,26 @@ footer .redes .redesLi a:hover .btn--mail {
   grid-area: foto9;
 }
 
-.lineaNenas {
-  padding-top: 120px;
-  padding-left: 150px;
+.tituloNenas {
+  padding-top: 100px;
   text-align: center;
+  font-size: 50px;
+}
+
+.lineaNenas {
+  padding-top: 20px;
+  padding-left: 20px;
+  text-align: center;
+}
+
+.lineaNenas .row {
+  max-width: 100%;
 }
 
 .lineaNenas .box-producto {
   background-color: skyblue;
   display: block;
-  padding: 18px;
+  padding: 18px 3px 18px 3px;
   margin-bottom: 30px;
   position: relative;
 }
@@ -450,6 +460,8 @@ footer .redes .redesLi a:hover .btn--mail {
 
 .lineaNenas .videoNenas {
   margin-top: 20px;
+  width: 400ppx;
+  height: 315px;
 }
 
 /*tablet-pc*/
@@ -580,6 +592,19 @@ footer .redes .redesLi a:hover .btn--mail {
   }
   .shop-container .row .imagen img {
     height: 150px;
+  }
+  .tituloNenas {
+    padding-top: 220px;
+    text-align: center;
+    font-size: 50px;
+  }
+  .box-prodcuto {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .box-photo {
+    height: 150px;
+    width: 100%;
   }
 }
 
