@@ -6,6 +6,7 @@
 @import "footer";
 @import "contacto";
 @import "quienesSomos";
+@import "productos";
 @import "index";
 @import "lineaNenas";
 @import "responsive";
@@ -22,48 +23,7 @@ body {
   height: 100%;
   background-color: $fondoBody;
 
-  .shop-container {
-    height: $altoShopContainer;
-    width: $anchoShopContainer;
-    padding-top: 150px;
-    padding-left: 10px;
-    text-align: center;
-
-    h2 {
-      font-family: $fondoFooter;
-      font-size: $letraTitulo;
-    }
-    .row {
-      margin-top: 30px;
-      padding-top: 50px;
-
-      .imagen {
-        img {
-          width: 100%;
-          height: 250px;
-        }
-      }
-
-      .col {
-        .row {
-          text-align: center;
-          .imgProducto {
-            width: $anchoImgProducto;
-            height: $altoImgProducto;
-          }
-          .descripcionProducto {
-            font-size: $letraDescripcion;
-            font-family: $fontDescripciones;
-            text-align: center;
-          }
-          .precioProducto {
-            font-size: $letraPrecios;
-            font-family: $fondoContenedoresBlog;
-          }
-        }
-      }
-    }
-  }
+ 
   .puntosVenta-container {
     text-align: center;
     padding-top: 120px;
