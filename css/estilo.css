@@ -568,7 +568,7 @@ footer .redes .redesLi a:hover .btn--mail {
     text-align: center;
   }
   .containerBlog .sidebarBlog .fotoBlog .imgBlog {
-    width: 300px;
+    width: 200px;
     height: 200px;
   }
   .containerBlog .publicacionesRelacionadas {
@@ -606,6 +606,9 @@ footer .redes .redesLi a:hover .btn--mail {
     height: 150px;
     width: 100%;
   }
+  .tituloPuntosVenta {
+    padding-top: 100px;
+  }
 }
 
 * {
@@ -642,4 +645,8 @@ body .puntosVenta-container .fila-sucursal .bloque-sucursal {
   background-color: aliceblue;
   border-style: inset;
   margin: 5px;
+}
+
+body .puntosVenta-container .row {
+  max-width: 100%;
 }

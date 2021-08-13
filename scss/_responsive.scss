@@ -151,4 +151,8 @@
   .box-photo {
     @include medidaCaja(100%,150px);
   }
+  //puntos de venta 
+  .tituloPuntosVenta{
+    padding-top: 100px;
+  }
 }
