@@ -492,6 +492,7 @@ footer .redes .redesLi a:hover .btn--mail {
     font-size: 0;
     text-transform: uppercase;
     width: 100%;
+    top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -609,6 +610,16 @@ footer .redes .redesLi a:hover .btn--mail {
   .tituloPuntosVenta {
     padding-top: 100px;
   }
+  .fila-sucursal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .fila-sucursal .bloque-sucursal {
+    height: 250px;
+    min-height: 100%;
+    text-align: center;
+  }
 }
 
 * {
@@ -645,6 +656,10 @@ body .puntosVenta-container .fila-sucursal .bloque-sucursal {
   background-color: aliceblue;
   border-style: inset;
   margin: 5px;
+}
+
+body .puntosVenta-container .fila-sucursal .bloque-sucursal .row {
+  display: block;
 }
 
 body .puntosVenta-container .row {
