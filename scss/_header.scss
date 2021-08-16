@@ -41,7 +41,7 @@ header {
     .nav-menu {
       position: fixed;
       max-width: 100%;
-      width: 100% ;
+      width: 100%;
       height: 0px;
       top: 40px;
       background: $fondoContenedoresBlog;
@@ -76,6 +76,20 @@ header {
         margin-top: 20px;
         li {
           display: block;
+        }
+        ul {
+          position: absolute;
+          top: 25%;
+          left: 5%;
+          display: none;
+        }
+        li {
+          &:hover {
+            ul {
+              display: block;
+              background-color: $fondoContenedoresBlog;
+            }
+          }
         }
       }
     }

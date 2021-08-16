@@ -115,6 +115,18 @@ header .menuIndex #check:checked ~ .nav-menu li {
   display: block;
 }
 
+header .menuIndex #check:checked ~ .nav-menu ul {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  display: none;
+}
+
+header .menuIndex #check:checked ~ .nav-menu li:hover ul {
+  display: block;
+  background-color: #1768AC;
+}
+
 .tituloBlog {
   padding-top: 200px;
   text-align: center;
@@ -212,17 +224,17 @@ header .menuIndex #check:checked ~ .nav-menu li {
   text-align: center;
   font-weight: bold;
   padding: 0px 80px 0px 80px;
-  font-size: 10px;
+  font-size: 14px;
   position: relative;
 }
 
 .ulFooter li a {
   text-decoration: none;
-  color: #fff;
+  color: #2c2c2c;
 }
 
 footer {
-  background-color: #E5D549;
+  background-color: #ffcf00;
 }
 
 footer .row {
@@ -230,7 +242,8 @@ footer .row {
 }
 
 footer .h5Footer {
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -255,12 +268,12 @@ footer .redes .redesLi {
 
 footer .redes .redesLi a .fotoFooter {
   width: 30px;
-  height: 30px;
+  height: 20px;
 }
 
 footer .redes .redesLi a .fotoFooter:hover {
   width: 45px;
-  height: 45px;
+  height: 30px;
 }
 
 footer .redes .redesLi a:hover .btn--ig {
@@ -310,7 +323,7 @@ footer .redes .redesLi a:hover .btn--mail {
 }
 
 .shop-container h2 {
-  font-family: #E5D549;
+  font-family: #ffcf00;
   font-size: 50px;
 }
 
